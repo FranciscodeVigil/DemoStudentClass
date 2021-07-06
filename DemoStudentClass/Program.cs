@@ -8,18 +8,13 @@ namespace DemoStudentClass
         {
             Student molly = new Student("Molly Cat", 1234);
 
-            Console.WriteLine("Molly's Id Number: {0}", molly.GetIdNumber());
-            Console.WriteLine("Molly's Name: {0}", molly.GetName());
+            Console.WriteLine("Molly's Id Number: {0}", molly.IdNumber);
+            Console.WriteLine("Molly's Name: {0}", molly.Name);
+            molly.Score1 = 100;
+            molly.Score2 = 80;
+            Console.WriteLine("Molly's Average Score: {0}", molly.AverageScore);
+            Console.WriteLine("Molly's High Score: {0}", molly.HighScore);
 
-            Student bella = new Student("Bella");
-
-            Console.WriteLine("Bella's Id Number: {0}", bella.GetIdNumber());
-            Console.WriteLine("Bella's Name: {0}", bella.GetName());
-
-            Student kitkat = new Student("KitKat");
-
-            Console.WriteLine("kitKat's Id Number: {0}", kitkat.GetIdNumber());
-            Console.WriteLine("kitKat's Name: {0}", kitkat.GetName());
 
         }
     }
