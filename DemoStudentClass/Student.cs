@@ -11,10 +11,21 @@ namespace DemoStudentClass
         private double score1;
         private double score2;
 
-        public Student()
+        public Student() : this("Unknown", -1)
         {
-
         }
+        public Student(int newIdNumber) : this("Unknown", newIdNumber)
+        {
+        }
+        public Student(string newName) :  this(newName, -1)
+        {
+        }
+        public Student(string newName, int newIdNumber)
+        {
+            this.name = newName;
+            this.idNumber = newIdNumber;
+        }
+
         public string GetName()
         {
             return name;

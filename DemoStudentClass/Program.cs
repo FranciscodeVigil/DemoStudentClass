@@ -6,28 +6,20 @@ namespace DemoStudentClass
     {
         static void Main(string[] args)
         {
-            Student.DoStuff();
-            Student joe = new Student();
-            joe.SetName("Joe Shmoe");
+            Student molly = new Student("Molly Cat", 1234);
 
-            string joesName = joe.GetName();
-            Console.WriteLine("Joe's name is {0}", joesName);
+            Console.WriteLine("Molly's Id Number: {0}", molly.GetIdNumber());
+            Console.WriteLine("Molly's Name: {0}", molly.GetName());
 
-            Student jane = new Student();
-            jane.SetName("Jane");
-            Console.WriteLine("Jane's name is {0}", jane.GetName());
+            Student bella = new Student("Bella");
 
-            jane.SetScore1(100);
-            jane.SetScore2(50);
-            Console.WriteLine("Jane's average score is {0}", jane.GetAverageScore());
+            Console.WriteLine("Bella's Id Number: {0}", bella.GetIdNumber());
+            Console.WriteLine("Bella's Name: {0}", bella.GetName());
 
-            jane.SetScore2(90);
-            Console.WriteLine("Jane's new average score is {0}", jane.GetAverageScore());
+            Student kitkat = new Student("KitKat");
 
-            Console.WriteLine("Jane's high score is {0}", jane.GetHighScore());
-
-            jane.SetScore2(110);
-            Console.WriteLine("Jane's new high score is {0}", jane.GetHighScore());
+            Console.WriteLine("kitKat's Id Number: {0}", kitkat.GetIdNumber());
+            Console.WriteLine("kitKat's Name: {0}", kitkat.GetName());
 
         }
     }
